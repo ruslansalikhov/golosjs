@@ -1,7 +1,7 @@
 # Golos.js
 Golos.js the JavaScript API for Golos blockchain
 
-[FORKED BY STEEM.js](https://github.com/adcpm/golos)
+[FORKED BY STEEM.js](https://github.com/adcpm/steem)
 
 ## Documentation 
 Here is full documentation: https://github.com/dacom_dark_sun/golosjs/tree/master/doc
