@@ -1,4 +1,4 @@
-# Steem.js
+# Golos.js
 Golos.js the JavaScript API for Golos blockchain
 
 [FORKED BY STEEM.js](https://github.com/adcpm/golos)
