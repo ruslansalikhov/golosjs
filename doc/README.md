@@ -1,32 +1,27 @@
 # Documentation
 
-## Install
-```
-$ npm install steem --save
-```
-
 ## Subscriptions
 ### Set Subscribe Callback
 ```js 
-steem.api.setSubscribeCallback(cb, clearFilter, function(err, result) {
+golos.api.setSubscribeCallback(cb, clearFilter, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Set Pending Transaction Callback
 ```js 
-steem.api.setPendingTransactionCallback(cb, function(err, result) {
+golos.api.setPendingTransactionCallback(cb, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Set Block Applied Callback
 ```js 
-steem.api.setBlockAppliedCallback(cb, function(err, result) {
+golos.api.setBlockAppliedCallback(cb, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Cancel All Subscriptions
 ```js 
-steem.api.cancelAllSubscriptions(function(err, result) {
+golos.api.cancelAllSubscriptions(function(err, result) {
 	console.log(err, result);
 });
 ```
@@ -34,61 +29,61 @@ steem.api.cancelAllSubscriptions(function(err, result) {
 ## Tags
 ### Get Trending Tags
 ```js 
-steem.api.getTrendingTags(afterTag, limit, function(err, result) {
+golos.api.getTrendingTags(afterTag, limit, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Discussions By Trending
 ```js 
-steem.api.getDiscussionsByTrending(query, function(err, result) {
+golos.api.getDiscussionsByTrending(query, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Discussions By Created
 ```js 
-steem.api.getDiscussionsByCreated(query, function(err, result) {
+golos.api.getDiscussionsByCreated(query, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Discussions By Active
 ```js 
-steem.api.getDiscussionsByActive(query, function(err, result) {
+golos.api.getDiscussionsByActive(query, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Discussions By Cashout
 ```js 
-steem.api.getDiscussionsByCashout(query, function(err, result) {
+golos.api.getDiscussionsByCashout(query, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Discussions By Payout
 ```js 
-steem.api.getDiscussionsByPayout(query, function(err, result) {
+golos.api.getDiscussionsByPayout(query, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Discussions By Votes
 ```js 
-steem.api.getDiscussionsByVotes(query, function(err, result) {
+golos.api.getDiscussionsByVotes(query, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Discussions By Children
 ```js 
-steem.api.getDiscussionsByChildren(query, function(err, result) {
+golos.api.getDiscussionsByChildren(query, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Discussions By Hot
 ```js 
-steem.api.getDiscussionsByHot(query, function(err, result) {
+golos.api.getDiscussionsByHot(query, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Discussions By Feed
 ```js 
-steem.api.getDiscussionsByFeed(query, function(err, result) {
+golos.api.getDiscussionsByFeed(query, function(err, result) {
 	console.log(err, result);
 });
 ```
@@ -96,43 +91,43 @@ steem.api.getDiscussionsByFeed(query, function(err, result) {
 ## Blocks And Transactions
 ### Get Block Header
 ```js 
-steem.api.getBlockHeader(blockNum, function(err, result) {
+golos.api.getBlockHeader(blockNum, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Block
 ```js 
-steem.api.getBlock(blockNum, function(err, result) {
+golos.api.getBlock(blockNum, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get State
 ```js 
-steem.api.getState(path, function(err, result) {
+golos.api.getState(path, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Trending Categories
 ```js 
-steem.api.getTrendingCategories(after, limit, function(err, result) {
+golos.api.getTrendingCategories(after, limit, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Best Categories
 ```js 
-steem.api.getBestCategories(after, limit, function(err, result) {
+golos.api.getBestCategories(after, limit, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Active Categories
 ```js 
-steem.api.getActiveCategories(after, limit, function(err, result) {
+golos.api.getActiveCategories(after, limit, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Recent Categories
 ```js 
-steem.api.getRecentCategories(after, limit, function(err, result) {
+golos.api.getRecentCategories(after, limit, function(err, result) {
 	console.log(err, result);
 });
 ```
@@ -140,49 +135,49 @@ steem.api.getRecentCategories(after, limit, function(err, result) {
 ## Globals
 ### Get Config
 ```js 
-steem.api.getConfig(function(err, result) {
+golos.api.getConfig(function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Dynamic Global Properties
 ```js 
-steem.api.getDynamicGlobalProperties(function(err, result) {
+golos.api.getDynamicGlobalProperties(function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Chain Properties
 ```js 
-steem.api.getChainProperties(after, limit, function(err, result) {
+golos.api.getChainProperties(after, limit, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Feed History
 ```js 
-steem.api.getFeedHistory(function(err, result) {
+golos.api.getFeedHistory(function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Current Median History Price
 ```js 
-steem.api.getCurrentMedianHistoryPrice(function(err, result) {
+golos.api.getCurrentMedianHistoryPrice(function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Witness Schedule
 ```js 
-steem.api.getWitnessSchedule(function(err, result) {
+golos.api.getWitnessSchedule(function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Hardfork Version
 ```js 
-steem.api.getHardforkVersion(function(err, result) {
+golos.api.getHardforkVersion(function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Next Scheduled Hardfork
 ```js 
-steem.api.getNextScheduledHardfork(function(err, result) {
+golos.api.getNextScheduledHardfork(function(err, result) {
 	console.log(err, result);
 });
 ```
@@ -190,7 +185,7 @@ steem.api.getNextScheduledHardfork(function(err, result) {
 ## Keys
 ### Get Key References
 ```js 
-steem.api.getKeyReferences(key, function(err, result) {
+golos.api.getKeyReferences(key, function(err, result) {
 	console.log(err, result);
 });
 ```
@@ -198,55 +193,55 @@ steem.api.getKeyReferences(key, function(err, result) {
 ## Accounts
 ### Get Accounts
 ```js 
-steem.api.getAccounts(names, function(err, result) {
+golos.api.getAccounts(names, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Account References
 ```js 
-steem.api.getAccountReferences(accountId, function(err, result) {
+golos.api.getAccountReferences(accountId, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Lookup Account Names
 ```js 
-steem.api.lookupAccountNames(accountNames, function(err, result) {
+golos.api.lookupAccountNames(accountNames, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Lookup Accounts
 ```js 
-steem.api.lookupAccounts(lowerBoundName, limit, function(err, result) {
+golos.api.lookupAccounts(lowerBoundName, limit, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Account Count
 ```js 
-steem.api.getAccountCount(function(err, result) {
+golos.api.getAccountCount(function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Conversion Requests
 ```js 
-steem.api.getConversionRequests(accountName, function(err, result) {
+golos.api.getConversionRequests(accountName, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Account History
 ```js 
-steem.api.getAccountHistory(account, from, limit, function(err, result) {
+golos.api.getAccountHistory(account, from, limit, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Owner History
 ```js 
-steem.api.getOwnerHistory(account, function(err, result) {
+golos.api.getOwnerHistory(account, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Recovery Request
 ```js 
-steem.api.getRecoveryRequest(account, function(err, result) {
+golos.api.getRecoveryRequest(account, function(err, result) {
 	console.log(err, result);
 });
 ```
@@ -254,19 +249,19 @@ steem.api.getRecoveryRequest(account, function(err, result) {
 ## Market
 ### Get Order Book
 ```js 
-steem.api.getOrderBook(limit, function(err, result) {
+golos.api.getOrderBook(limit, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Open Orders
 ```js 
-steem.api.getOpenOrders(owner, function(err, result) {
+golos.api.getOpenOrders(owner, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Liquidity Queue
 ```js 
-steem.api.getLiquidityQueue(startAccount, limit, function(err, result) {
+golos.api.getLiquidityQueue(startAccount, limit, function(err, result) {
 	console.log(err, result);
 });
 ```
@@ -274,37 +269,37 @@ steem.api.getLiquidityQueue(startAccount, limit, function(err, result) {
 ## Authority / Validation
 ### Get Transaction Hex
 ```js 
-steem.api.getTransactionHex(trx, function(err, result) {
+golos.api.getTransactionHex(trx, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Transaction
 ```js 
-steem.api.getTransaction(trxId, function(err, result) {
+golos.api.getTransaction(trxId, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Required Signatures
 ```js 
-steem.api.getRequiredSignatures(trx, availableKeys, function(err, result) {
+golos.api.getRequiredSignatures(trx, availableKeys, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Potential Signatures
 ```js 
-steem.api.getPotentialSignatures(trx, function(err, result) {
+golos.api.getPotentialSignatures(trx, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Verify Authority
 ```js 
-steem.api.verifyAuthority(trx, function(err, result) {
+golos.api.verifyAuthority(trx, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Verify Account Authority
 ```js 
-steem.api.verifyAccountAuthority(nameOrId, signers, function(err, result) {
+golos.api.verifyAccountAuthority(nameOrId, signers, function(err, result) {
 	console.log(err, result);
 });
 ```
@@ -312,13 +307,13 @@ steem.api.verifyAccountAuthority(nameOrId, signers, function(err, result) {
 ## Votes
 ### Get Active Votes
 ```js 
-steem.api.getActiveVotes(author, permlink, function(err, result) {
+golos.api.getActiveVotes(author, permlink, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Account Votes
 ```js 
-steem.api.getAccountVotes(voter, function(err, result) {
+golos.api.getAccountVotes(voter, function(err, result) {
 	console.log(err, result);
 });
 ```
@@ -326,25 +321,25 @@ steem.api.getAccountVotes(voter, function(err, result) {
 ## Content
 ### Get Content
 ```js 
-steem.api.getContent(author, permlink, function(err, result) {
+golos.api.getContent(author, permlink, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Content Replies
 ```js 
-steem.api.getContentReplies(parent, parentPermlink, function(err, result) {
+golos.api.getContentReplies(parent, parentPermlink, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Discussion By Author Before Date
 ```js 
-steem.api.getDiscussionsByAuthorBeforeDate(author, startPermlink, beforeDate, limit, function(err, result) {
+golos.api.getDiscussionsByAuthorBeforeDate(author, startPermlink, beforeDate, limit, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Replies By Last Update
 ```js 
-steem.api.getRepliesByLastUpdate(startAuthor, startPermlink, limit, function(err, result) {
+golos.api.getRepliesByLastUpdate(startAuthor, startPermlink, limit, function(err, result) {
 	console.log(err, result);
 });
 ```
@@ -352,50 +347,50 @@ steem.api.getRepliesByLastUpdate(startAuthor, startPermlink, limit, function(err
 ## Witnesses
 ### Get Witnesses
 ```js 
-steem.api.getWitnesses(witnessIds, function(err, result) {
+golos.api.getWitnesses(witnessIds, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Witness By Account
 ```js 
-steem.api.getWitnessByAccount(accountName, function(err, result) {
+golos.api.getWitnessByAccount(accountName, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Witnesses By Vote
 ```js 
-steem.api.getWitnessesByVote(from, limit, function(err, result) {
+golos.api.getWitnessesByVote(from, limit, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Lookup Witness Accounts
 ```js 
-steem.api.lookupWitnessAccounts(lowerBoundName, limit, function(err, result) {
+golos.api.lookupWitnessAccounts(lowerBoundName, limit, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Witness Count
 ```js 
-steem.api.getWitnessCount(function(err, result) {
+golos.api.getWitnessCount(function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Active Witnesses
 ```js 
-steem.api.getActiveWitnesses(function(err, result) {
+golos.api.getActiveWitnesses(function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Miner Queue
 ```js 
-steem.api.getMinerQueue(function(err, result) {
+golos.api.getMinerQueue(function(err, result) {
 	console.log(err, result);
 });
 ```
 
 ## Login
 ```js
-steem.api.login('ned', '****************', function(err, result) {
+golos.api.login('ned', '****************', function(err, result) {
 	console.log(err, result);
 });
 ```
@@ -403,13 +398,13 @@ steem.api.login('ned', '****************', function(err, result) {
 ## Follow
 ### Get Followers
 ```js 
-steem.api.getFollowers(following, startFollower, followType, limit, function(err, result) {
+golos.api.getFollowers(following, startFollower, followType, limit, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Get Following
 ```js 
-steem.api.getFollowing(follower, startFollowing, followType, limit, function(err, result) {
+golos.api.getFollowing(follower, startFollowing, followType, limit, function(err, result) {
 	console.log(err, result);
 });
 ```
@@ -417,25 +412,25 @@ steem.api.getFollowing(follower, startFollowing, followType, limit, function(err
 ## Broadcast
 ### Broadcast Transaction
 ```js 
-steem.api.broadcastTransaction(trx, function(err, result) {
+golos.api.broadcastTransaction(trx, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Broadcast Transaction Synchronous
 ```js 
-steem.api.broadcastTransactionSynchronous(trx, function(err, result) {
+golos.api.broadcastTransactionSynchronous(trx, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Broadcast Block
 ```js 
-steem.api.broadcastBlock(b, function(err, result) {
+golos.api.broadcastBlock(b, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Broadcast Transaction With Callback
 ```js 
-steem.api.broadcastTransactionWithCallback(confirmationCallback, trx, function(err, result) {
+golos.api.broadcastTransactionWithCallback(confirmationCallback, trx, function(err, result) {
 	console.log(err, result);
 });
 ```
@@ -443,25 +438,25 @@ steem.api.broadcastTransactionWithCallback(confirmationCallback, trx, function(e
 ## Stream
 ### Stream Block Number
 ```js 
-steem.api.streamBlockNumber(function(err, result) {
+golos.api.streamBlockNumber(function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Stream Block
 ```js 
-steem.api.streamBlock(function(err, result) {
+golos.api.streamBlock(function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Stream Transactions
 ```js 
-steem.api.streamTransactions(function(err, result) {
+golos.api.streamTransactions(function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Stream Operations
 ```js 
-steem.api.streamOperations(function(err, result) {
+golos.api.streamOperations(function(err, result) {
 	console.log(err, result);
 });
 ```
@@ -469,46 +464,46 @@ steem.api.streamOperations(function(err, result) {
 ## Formatter
 ### Reputation
 ```js 
-var reputation = steem.formatter.reputation(user.reputation);
+var reputation = golos.formatter.reputation(user.reputation);
 console.log(reputation);
 ```
 ### Vest To Steem
 ```js 
-var power = steem.formatter.vestToSteem(user.vesting_shares, props.total_vesting_shares, props.total_vesting_fund_steem)
+var power = golos.formatter.vestToSteem(user.vesting_shares, props.total_vesting_shares, props.total_vesting_fund_steem)
 console.log(power);
 ```
 
 ## Broadcast
 ### Vote
 ```js
-var steem = require('steem');
+var golos = require('golos');
 
-var wif = steem.auth.toWif(username, password, 'posting');
-steem.broadcast.vote(wif, voter, author, permlink, weight, function(err, result) {
+var wif = golos.auth.toWif(username, password, 'posting');
+golos.broadcast.vote(wif, voter, author, permlink, weight, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### UpVote
 ```js
-steem.broadcast.upvote(wif, voter, author, permlink, weight, function(err, result) {
+golos.broadcast.upvote(wif, voter, author, permlink, weight, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### DownVote
 ```js
-steem.broadcast.downvote(wif, voter, author, permlink, weight, function(err, result) {
+golos.broadcast.downvote(wif, voter, author, permlink, weight, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Comment
 ```js
-steem.broadcast.comment(wif, parentAuthor, parentPermlink, author, permlink, title, body, jsonMetadata, function(err, result) {
+golos.broadcast.comment(wif, parentAuthor, parentPermlink, author, permlink, title, body, jsonMetadata, function(err, result) {
 	console.log(err, result);
 });
 ```
 ### Transfer
 ```js
-steem.broadcast.transfer(wif, from, to, amount, memo, function(err, result) {
+golos.broadcast.transfer(wif, from, to, amount, memo, function(err, result) {
 	console.log(err, result);
 });
 ```
